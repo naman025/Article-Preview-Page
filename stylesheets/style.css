@@ -1,0 +1,321 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #104B80;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-group {
+    margin-bottom: 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 1em 1.5rem;
+    border-radius: 0.5em;
+    border: none;
+    background-color: #c2c2c2;
+    transition: all 0.5s ease-out;
+}
+
+.facebook.btn {
+    background-color: #104B80;
+    color: #fff;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+}
+
+.instagram.btn {
+    background: linear-gradient(165deg, rgba(193, 53, 132, 0.9) 20%, rgba(225,48,108,0.8) 65%, rgba(253,29,29,0.8) 95%);
+    color: #fff;
+    margin-bottom: 0.5em;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(1);
+}
+
+#custom-heading {
+    color: #504d4d;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 0.2em;
+}
+
+#helper-text {
+    color: #7e7878;
+    font-size: 0.8em;
+    margin-bottom: 1em;
+}
+
+#sample-text {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #504d4d;
+    margin: 0.75em 0;
+}
+
+textarea {
+    border-radius: 5px;
+    width: 90%;
+    height: 18em;
+    font-size: 0.9em;
+    font-family: 'Open Sans', sans-serif;
+    resize: none;
+    outline: none;
+    margin-bottom: 1em;
+    padding: 0.8em;
+    color: #4d4b4bef;
+    letter-spacing: 0.6px;
+    line-height: 1.5em;
+    background-color: #f8f8f8;
+}
+
+textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.bottom {
+    background-color: #f2f2f2;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#dekstopFB, #instafeed {
+    display: none;
+}
+
+.view>header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    flex-direction: column;
+}
+
+.info h2 {
+    color: #302c2c;
+    font-weight: 700;
+}
+
+.info span {
+    font-size: 0.9em;
+    display: block;
+    margin-top: 1em;
+}
+
+.preview {
+    background-color: #fff;
+    margin: 5% 8%;
+    padding: 5%;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+
+}
+
+#logo {
+    width: 45px;
+    border-radius: 50%;
+}
+
+.left div {
+    padding: 0.2em 0.5em;
+}
+
+.username {
+    font-weight: 700;
+}
+
+.time {
+    color: #7e7878;
+    font-size: 0.8em;
+}
+
+.dots {
+    width: 25px;
+    height: 10px;
+}
+
+.text-preview {
+    margin-top: 10px;
+    word-wrap: break-word;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1em 0;
+    border-bottom: 1px solid #504d4d;
+    line-height: 1.3em;
+    overflow: scroll;
+    max-height: 180px;
+}
+
+.text-preview::-webkit-scrollbar {
+    display: none;
+}
+
+.more {
+    display: none;
+}
+
+.readMore {
+    border: none;
+    background: none;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.3em;
+    color: #104B80;
+    padding: 0;
+}
+
+.readMore:hover {
+    cursor: pointer;
+}
+
+.reaction {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.react {
+    font-size: 0.9em;
+    color: #504d4d;
+    font-weight: 600;
+    transition: all 0.5s;
+    padding: 0 1em;
+    color: rgb(63, 63, 88);
+    display: flex;
+}
+
+.fa {
+    margin-right: 0.4em;
+}
+
+.react:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.react:active {
+    transform: scale(1);
+}
+
+#mobileFB .preview {
+    margin: 5% 10% 5%;
+}
+
+#dekstopFB .preview {
+    margin: 5% 2%;
+}
+
+#dekstopFB .text-preview {
+    font-size: 0.9em;
+}
+
+
+#instafeed .preview{
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.errorImage {
+    width: 50%;
+    margin-bottom: 2em;
+}
+
+.errorTxt {
+    font-weight: 700;
+    color: #302c2c;
+    margin-bottom: 0.4em;
+}
+
+.errorSubtxt {
+    color: #504d4d;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+
+@media (min-width: 1000px) {
+    main {
+        flex-direction: row;
+        max-width: 80%;
+    }
+
+    .top {
+        width: 50%;
+        position: sticky;
+        top: 500px;
+    }
+    .bottom {
+        width: 50%;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+        max-height: 80vh;
+        overflow: scroll;
+    }
+
+    .bottom::-webkit-scrollbar {
+        display: none;
+    }
+
+    .preview {
+        margin-top: 3em;
+    }
+}
+
+@media (max-width: 450px) {
+    .text-preview{
+        max-height: 220px;
+    }
+    .react {
+        flex-direction: column;
+        align-items: center;
+    }
+    .preview {
+        margin: 5% 2.5%;
+    }
+    #mobileFB .preview {
+        margin: 5%;
+    }
+}

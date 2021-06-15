@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheets/reset.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>Article Preview Page</title>
+</head>
+<body>
+    <main>
+        <section class="left-side top">
+            
+            <div class="btn-group">
+                <button class="btn facebook" onclick="fb()">Facebook</button>
+                <button class="btn instagram" onclick="insta()">Instagram</button>
+            </div>
+            
+            <h2 id="custom-heading">Customize Your Post</h2>
+            <p id="helper-text">These features and text only appear in your Facebook post.</p>
+            <h3 id="sample-text">Sample Text</h3>
+            <textarea name="textbox" id="textbox" spellcheck="false" data-gramm="false" oninput="copy()">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas dolores atque voluptatum laudantium, perferendis assumenda repellendus quod adipisci illum provident hic iste, delectus quis sequi ut maiores quidem nobis asperiores ad exercitationem quam, molestias nemo corrupti. Facilis, perspiciatis dolor iusto ut quasi molestiae nisi in dicta, eligendi sunt quia saepe ipsam. Maxime veniam voluptas, tempora voluptate voluptatem magnam voluptates possimus! Dolorem rerum iste illo aliquam nostrum iusto, autem laboriosam aperiam voluptas accusantium quod quaerat? Non a unde atque magni sapiente laudantium hic at officiis distinctio tempore eius dolorum impedit quae, harum animi corrupti iste molestias qui. Repudiandae labore dolore in.</textarea>
+        
+        </section>
+
+        <section class="right-side bottom">
+            
+            <section id="mobileFB" class="view">
+                
+                <header>
+                   <div class="info">
+                        <h2>Preview</h2>
+                        <span>
+                            <i class="fa fa-facebook-square"></i>
+                            Mobile News feed
+                        </span>
+                   </div>
+                    <button class="preview-btn btn" onclick="previewAll()">Preview All</button>
+                </header>
+
+                <div class="preview">
+                    
+                    <header class="user-info">
+                        <div class="left">
+                            <img src="images/logo.png" alt="logo" id="logo">
+                            <div>
+                                <h3 class="username">Batingo11</h3>
+                                <span class="time">Today at 6:29 PM</span>
+                            </div>
+                        </div>
+                        <img src="images/dots.jpg" alt="" class="dots">
+                    </header>
+
+                    <p class="text-preview">
+                        <span id="teaser1">I am Naman Aggarwal</span><span 
+                        id="dot1">...</span><span 
+                        id="more1" class="more"> This is more about me</span><button 
+                        id="readMore1" class="readMore" onclick="myFunction1()">Read More</button>
+                    </p>
+                    
+                    <footer class="reaction">
+                        <span class="react"><i class="fa fa-thumbs-o-up"></i>Like</span>
+                        <span class="react"><i class="fa fa-comments-o"></i>Comment</span>
+                        <span class="react"><i class="fa fa-share"></i>Share</span>
+                    </footer>
+                </div>
+                
+            </section>
+            
+            <section id="dekstopFB" class="view">
+
+                <header>
+                   <div class="info">
+                        <h2>Preview</h2>
+                        <span>
+                            <i class="fa fa-facebook-square"></i>
+                            Dekstop News feed
+                        </span>
+                   </div>
+                    <button class="preview-btn btn" onclick="previewAll()">Preview All</button>
+                </header>
+
+                <div class="preview">
+                     
+                    <header class="user-info">
+                        <div class="left">
+                            <img src="images/logo.png" alt="logo" id="logo">
+                            <div>
+                                <h3 class="username">Batingo11</h3>
+                                <span class="time">Today at 6:29 PM</span>
+                            </div>
+                        </div>
+                        <img src="images/dots.jpg" alt="" class="dots">
+                    </header>
+
+                    <p class="text-preview">
+                        <span id="teaser2">I am Naman Aggarwal</span><span 
+                        id="dot2">...</span><span 
+                        id="more2" class="more"> This is more about me</span><button 
+                        id="readMore2" class="readMore" onclick="myFunction2()">Read More</button>
+                    </p>
+
+                    <footer class="reaction">
+                        <span class="react"><i class="fa fa-thumbs-o-up"></i>Like</span>
+                        <span class="react"><i class="fa fa-comments-o"></i>Comment</span>
+                        <span class="react"><i class="fa fa-share"></i>Share</span>
+                    </footer>
+                </div>
+
+            </section>
+
+            <section id="instafeed" class="view">
+                
+                <header>
+                   <div class="info">
+                        <h2>Preview</h2>
+                        <span>
+                            <i class="fa fa-instagram" aria-hidden="true" style="font-weight: bolder;"></i>
+                            Instagram Feed
+                        </span>
+                   </div>
+                    <button class="preview-btn btn" onclick="previewAll()">Preview All</button>
+                </header>
+
+                <div class="preview">
+                    <img src="images/InstaFeed.png" alt="" class="errorImage">
+                    <h2 class="errorTxt">
+                        Preview Unvailable
+                    </h2>
+                    <p class="errorSubtxt">The post preview can't be displayed right now.</p>
+                </div>
+
+            </section>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
